@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+</head>
+<body>
+
+    <form action="http://127.0.0.1:5000/upload" method="post" enctype="multipart/form-data">
+        <!-- Upload MP4 File -->
+        Select MP4 file to upload:
+        <input type="file" name="file" accept=".mp4"><br><br>
+
+        <!-- Upload SRT File -->
+        Select SRT file to upload:
+        <input type="file" name="srt" accept=".srt"><br><br>
+
+        <!-- Language Selection -->
+        Select language for subtitles:
+        <select name="language_code">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <!-- Add more languages as needed -->
+        </select><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+
+</body>
+</html>
